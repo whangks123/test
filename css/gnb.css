@@ -1,0 +1,54 @@
+/*gnb.css*/
+*{margin: 0; padding: 0;}
+
+.wrp{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+#button{
+        width: 130px;
+        color: burlywood;
+        background-color: azure;
+        text-align: center;
+        height: 60px;
+        padding: 10px 0px 0px 0px;
+        font-size: 20px;
+}
+#button a{
+    text-decoration: none;
+    text-align: center;
+    color:cornflowerblue;
+}
+#button a:hover{
+    text-decoration: underline;
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+}
+
+#nav2 {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: deepskyblue;
+  width: 0 auto;
+}
+
+.navlist {
+  float: left;
+}
+
+.navlist a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 13px 20px;
+  text-decoration: none;
+}
+
+.navlist a:hover:not(.active){
+  background-color: dodgerblue;
+}
+
+.active {
+  background-color: coral;
+}
