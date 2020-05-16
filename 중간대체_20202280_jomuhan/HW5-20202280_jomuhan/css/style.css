@@ -1,0 +1,44 @@
+@import url(https://fonts.google.com/specimen/Nanum+Gothic?sidebar.open&selection.family=Nanum+Gothic);
+
+* {margin: 0; padding: 0;}
+.wrp{
+max-width: 1000px;
+margin:0 auto;
+}
+
+body{
+     font-family: 'NanumGothic', sans-serif
+     line-height: 160%
+}
+#category{
+          font-size: 16px;
+}
+#headline{
+        font-size: 30px;
+        padding-bottom: 20px;
+}
+#reporter{
+        font-size: 14px;
+        margin-bottom: 5px;
+}
+span{
+    color: darkgrey
+}
+.figure{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+.section{
+    font-size: 1.04em;
+    padding: 10px 0;
+}
+.section p{
+    padding: 5px 0;
+    margin-bottom: 10px;
+}
+.copyright{
+    margin-bottom: 50px;
+}
