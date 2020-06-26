@@ -1,0 +1,229 @@
+<!--aosgame.html-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>tcggame</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<script src="https://use.fontawesome.com/bfdc0ce719.js"></script>
+<!-- reset -->
+   <link rel="stylesheet" href="../css/reset.css">
+    <style>
+/* layout */
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        #wrapper {
+            width: 12800px;
+            margin: 0 auto;
+        }
+/* header */
+        header {
+            width:100%;
+            height:85px;
+            background: rgba(0, 0, 0, 0.3);
+            top:0; left:0;
+            position: fixed;
+            z-index: 5;
+        }
+        header .h_logo {
+            display: inline-block;
+            position: relative;
+            top: 10px;
+            left: 10px;
+        }
+        header nav #top_menu {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+        header nav li{
+            display: inline-block;
+            padding: 0 10px 10px 10px;
+            line-height: 50px;
+            text-transform: uppercase;
+        }
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            transform: scale(1); transition:all 0.3s;
+        }
+        header nav ul li a:hover {
+            color:rgb(5, 251, 194);
+            font-weight: bold;
+            transform: scale(2.4);
+        }
+/* 콘텐츠A: 메인화면 */
+        .conA {
+            background-image: url('./img/aos.jpg');
+            opacity: 0.75;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            width: 100%;
+            height: 800px;
+            text-align: center;
+        }
+        .conA .container{
+            position: absolute;
+            top:20%;
+            left:0; right:0;
+            font-size: 300%;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.3);
+            color: white;
+        }
+        .conA h1 {
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 2.5em;
+            color: #fff;
+            text-shadow: 0 1px 10px #cccccc;
+            letter-spacing: 50px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .conA .p_introduce {
+            margin-bottom: 30px;
+            letter-spacing: 30px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .conA .p_introduce2 {
+            text-align: center;
+            font-size: 15px;
+            letter-spacing: 5px;
+        }
+/* 콘텐츠B: 개요 */
+        .conB .container {
+            position: absolute;
+            padding-top: 80px;
+            padding-bottom: 20px;
+        }
+        .conB .text {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 60px;
+            text-align: center;
+        }
+        .conB h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        .conB p {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 14px;
+            line-height: 1.8;
+            opacity: 0.8;
+        }
+        .conB a{
+            color: rgba(139, 0, 0, 0.54);
+            text-decoration: none;
+        }
+        .conB a:hover {
+            text-decoration: underline;
+            color: rgba(139, 0, 0, 0.76);
+        }
+        .conB .img {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-size: 40px;
+            width: 2em;
+            line-height: 2em;
+            text-align: center;
+        }
+/* fontawome */
+        .fa {font-size: 50px; color:rgb(255, 0, 196); opacity: 0.5; transform:scale(0.8); transition: all 0.7s;}
+        .fa:hover {opacity:1; transform: scale(1.2);}
+        span .fa {font-size: 20px; color: rgba(255, 0, 216, 0.6);}
+/* 반응형(미디어 쿼리) */
+        @media (min-width: 768px) {
+            .conB .container {
+                display: flex;
+                max-width: 1000px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .conB .text {
+                flex: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<!--헤더: 상단 메뉴-->
+<header>
+    <h1><a href="../index.html" alt="header"><span><img class="h_logo" src="./img/logo.png" alt="로고" width="60" height="35"></span></a></h1>
+    <nav id="top_menu">
+        <ul>
+            <li><a href="../homework/homework.html">Homework</a></li>
+            <li><a href="../portfolio/portfolio.html">portfolis</a></li>
+            <li><a href="../contact/contact.html">contact</a></li>
+            <li><a href="../profile/profile.html">profile</a></li>
+        </ul>
+    </nav>
+</header> <!--헤더 끝-->
+<!--콘텐츠A: 메인화면-->
+<section class="conA">
+    <div class="container">
+        <h1>AOS(MOBA)</h1>
+        <p class="p_introduce">다중사용자 온라인 전투 아레나</p>
+        <p class="p_introduce2">AOS는 전통적인 RTS의 실시간 플레이와 조작체계 및 롤플레잉 게임(RPG, Role Playing Game)의 캐릭터 육성, 아이템 조합, 그리고 ‘공성전’ 같은 여러 요소들이 복합적으로 결합되어있다. 그렇기에 똑같은 AOS 게임이라고 해도 게임 내 요소들을 어떤 식으로 해석했느냐에 따라 그 게임성은 천차만별로 갈리게 된다. 이런 이유로 인해 ‘AOS 게임은 이런 게임이다!’라고 명확하게 정의를 내리기가 쉽지 않다. 다만 ‘유저가 오직 1명의 캐릭터만을 조작하며’, ‘여러 명의 유저가 팀을 이루어 상대팀과 실력을 겨루고’, ‘중립 몬스터를 죽이거나, 컴퓨터가 조종하는 캐릭터를 죽임으로써 자신의 캐릭터를 성장시키는 요소가 존재하고’, ‘다수의 타워를 부수고 최종적으로 상대팀의 본진 건물을 파괴하면 승리한다’는 조건을 만족하면 보통 AOS로 인정한다. 실제로 게임 시장에서 AOS 장르를 표방하는 작품들을 보면 형태는 제 각각이어도 대부분 이와 같은 조건들을 만족한다.
+</p>
+        <a href="./portfolio.html"><i class="fa fa-hand-o-left" aria-hidden="true"></i></a>
+    </div>
+</section>
+<!--콘텐츠B: 개요 section 시작-->
+<section class="conB">
+    <div class="container">
+        <div class="text">
+          <div class="img">
+           <img src="./img/lol2.png" alt="롤" width="100" height="100">
+           </div>
+            <h2>리그 오브 레전드</h2>
+            <p>라이엇 게임즈가 개발 및 서비스 중인 MOBA(AOS) 장르의 게임. 국내에선 게임 명칭의 앞 글자들을 따서 롤(LoL), 서양에서는 League 등으로 불린다. 이전까지 있었던 MOBA(AOS) 게임들보다 진입 장벽을 낮추는 것으로 높은 인기를 얻었고 현재는 전 세계에서 많은 유저들을 보유중인데 PC 게임 중 전 세계에서 많이 플레이하는 게임 중 하나이다.</p>
+            <a href="https://namu.wiki/w/%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C" target="_blank">MORE
+                <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+        </div>
+        <div class="text">
+          <div class="img">
+           <img src="./img/dota.jpg" alt="도타2" width="100" height="100">
+           </div>
+            <h2>도타2</h2>
+            <p>워크래프트 3의 유즈맵 디펜스 오브 디 에인션트의 후속편 도타 올스타즈를 밸브 코퍼레이션이 하나의 독립된 게임으로 제작한 AOS 게임. 도타2는 매우 충실한 전작 게승을 하였고 편리하게 통합된 음성 채팅 기능을 탑재하였다. 승패 위주가 아닌 게임에서의 행위 위주의 매치 메이킹 시스템이기에 클린한 게임 유지가 가능하다.</p>
+            <a href="https://namu.wiki/w/%EB%8F%84%ED%83%80%202" target="_blank">MORE
+                <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+        </div>
+        <div class="text">
+          <div class="img">
+           <img src="./img/cy.jpg" alt="사이퍼즈" width="100" height="100">
+           </div>
+            <h2>사이퍼즈</h2>
+            <p>던전앤파이터로 유명한 네오플이 제작한 AOS 스타일의 온라인 액션 게임. 초능력자인 캐릭터들 중 하나를 선택해 적 플레이어를 제압하고 적 본진의 기지를 파괴하는 것이 게임의 골자다. 게임 룰은 AOS를 따 왔지만, AOS의 요소는 간략화되어 있기 때문에 액션 TPS에 더 가깝다.</p>
+            <a href="https://namu.wiki/w/%EC%82%AC%EC%9D%B4%ED%8D%BC%EC%A6%88" target="_blank">MORE
+                <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+        </div>
+        <div class="text">
+          <div class="img">
+           <img src="./img/hos.png" alt="hos" width="100" height="100">
+           </div>
+            <h2>히어로즈 오브 더 스톰</h2>
+            <p>블리자드 엔터테인먼트에서 제작한 스타크래프트 2 엔진 기반의 AOS 게임. 블리자드의 세계관 내에 등장하는 영웅들이 한 곳에 모이는 올스타 게임이다. 줄여서 '히오스'라고도 말하고 게임이 잡히는 시간이 오래 걸려 '고급 레스토랑'이라고도 한다. 히오스는 다른 aos와 다르게 아이템이란 시스템이 없고 일정 레벨마다 기존 스킬을 강화하거나 새로운 스킬을 습득한다.</p>
+            <a href="https://namu.wiki/w/%ED%9E%88%EC%96%B4%EB%A1%9C%EC%A6%88%20%EC%98%A4%EB%B8%8C%20%EB%8D%94%20%EC%8A%A4%ED%86%B0" target="_blank">MORE
+                <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+        </div>
+        <div class="text">
+          <div class="img">
+           <img src="./img/yu.png" alt="유희왕" width="100" height="100">
+           </div>
+            <h2>유희왕 듀얼링크스</h2>
+            <p>코나미에서 출시한 유희왕/OCG의 스마트폰 전용 게임 애플리케이션이다. 룰은 일반 tcg와 같다. 유희왕은 초등학생때 많은 남자들이 한번쯤은 접해봤던 유명한 게임이다.</p>
+            <a href="https://namu.wiki/w/%EC%9C%A0%ED%9D%AC%EC%99%95%20%EB%93%80%EC%96%BC%EB%A7%81%ED%81%AC%EC%8A%A4" target="_blank">MORE
+                <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+        </div>
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!--rpggame.html-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>rpggame</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<script src="https://use.fontawesome.com/bfdc0ce719.js"></script>
+<!-- reset -->
+   <link rel="stylesheet" href="../css/reset.css">
+    <style>
+/* layout */
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        #wrapper {
+            width: 12800px;
+            margin: 0 auto;
+        }
+/* header */
+        header {
+            width:100%;
+            height:85px;
+            background: rgba(0, 0, 0, 0.3);
+            top:0; left:0;
+            position: fixed;
+            z-index: 5;
+        }
+        header .h_logo {
+            display: inline-block;
+            position: relative;
+            top: 10px;
+            left: 10px;
+        }
+        header nav #top_menu {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+        header nav li{
+            display: inline-block;
+            padding: 0 10px 10px 10px;
+            line-height: 50px;
+            text-transform: uppercase;
+        }
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            transform: scale(1); transition:all 0.3s;
+        }
+        header nav ul li a:hover {
+            color:rgb(5, 251, 194);
+            font-weight: bold;
+            transform: scale(2.4);
+        }
+/* 콘텐츠A: 메인화면 */
+        .conA {
+            background-image: url('./img/rpg.jpg');
+            opacity: 0.75;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            width: 100%;
+            height: 800px;
+            text-align: center;
+        }
+        .conA .container{
+            position: absolute;
+            top:20%;
+            left:0; right:0;
+            font-size: 300%;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.3);
+            color: white;
+        }
+        .conA h1 {
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 2.5em;
+            color: #fff;
+            text-shadow: 0 1px 10px #cccccc;
+            letter-spacing: 50px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .conA .p_introduce {
+            margin-bottom: 30px;
+            letter-spacing: 30px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .conA .p_introduce2 {
+            text-align: center;
+            font-size: 15px;
+            letter-spacing: 5px;
+        }
+/* 콘텐츠B: 개요 */
+        .conB .container {
+            position: absolute;
+            padding-top: 80px;
+            padding-bottom: 20px;
+        }
+        .conB .text {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 60px;
+            text-align: center;
+        }
+        .conB h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        .conB p {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 14px;
+            line-height: 1.8;
+            opacity: 0.8;
+        }
+        .conB a{
+            color: rgba(139, 0, 0, 0.54);
+            text-decoration: none;
+        }
+        .conB a:hover {
+            text-decoration: underline;
+            color: rgba(139, 0, 0, 0.76);
+        }
+        .conB .img {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-size: 40px;
+            width: 2em;
+            line-height: 2em;
+            text-align: center;
+        }
+/* fontawome */
+        .fa {font-size: 50px; color:rgb(255, 0, 196); opacity: 0.5; transform:scale(0.8); transition: all 0.7s;}
+        .fa:hover {opacity:1; transform: scale(1.2);}
+        span .fa {font-size: 20px; color: rgba(255, 0, 216, 0.6);}
+/* 반응형(미디어 쿼리) */
+        @media (min-width: 768px) {
+            .conB .container {
+                display: flex;
+                max-width: 1000px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .conB .text {
+                flex: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<!--헤더: 상단 메뉴-->
+<header>
+    <h1><a href="../index.html" alt="header"><span><img class="h_logo" src="./img/logo.png" alt="로고" width="60" height="35"></span></a></h1>
+    <nav id="top_menu">
+        <ul>
+            <li><a href="../homework/homework.html">Homework</a></li>
+            <li><a href="../portfolio/portfolio.html">portfolis</a></li>
+            <li><a href="../contact/contact.html">contact</a></li>
+            <li><a href="../profile/profile.html">profile</a></li>
+        </ul>
+    </nav>
+</header> <!--헤더 끝-->
+<!--콘텐츠A: 메인화면-->
+<section class="conA">
+    <div class="container">
+        <h1>RPG</h1>
+        <p class="p_introduce">롤플레잉 게임</p>
+        <p class="p_introduce2">컴퓨터가 대중화되기 이전에는 보통 ‘RPG’라고 하면 테이블에 둘러 앉아 게임 마스터(Game Master) 주관아래 주사위를 굴리며 전투를 하거나 던전을 탐험하는 보드게임 방식의 TRPG(Tabletop Role Playing game)를 의미했다. 하지만 컴퓨터가 대중화된 이후로는 RPG라고 하면 컴퓨터 또는 전용 게임기로 플레이하는 CRPG(Computer Role Playing Game)를 말한다. 다만 CRPG는 전통적인 TRPG와는 다르게 역할수행의 여부만으로 RPG를 판단하기 힘든 경우가 많다. 그렇기에 단순하게 전투 등을 통해 캐릭터의 레벨을 올리는 등 성장요소가 있는 게임을 통틀어서 RPG라고 부르기도 한다.테이블에 둘러 앉아 즐기는 TRPG와 컴퓨터로 플레이하는 CRPG외에도 유저가 영화 의상을 착용하고 마치 연기하듯이 플레이하는 라이브 액션 RPG(Live Action Role Playing Game)장르도 존재한다. 또한 인터넷이 발전하면서 하나의 기기로만 즐길 수 있던 싱글 플레이(Single Play)에서 벗어나 다수의 유저가 동시에 즐기는 멀티 플레이(Multi Play)가 도입. MMORPG(Massively Multiplayer Online Role Playing Game) 또는 MORPG(Multiplayer Online Role Playing Game) 등으로 파생되었다. 게임 내 스토리 또는 자유도를 즐기는 싱글 플레이 RPG와 달리 온라인 RPG는 대규모 공성전, 파티 플레이 등 유저간의 상호작용을 강조한다.
+</p>
+        <a href="./portfolio.html"><i class="fa fa-hand-o-left" aria-hidden="true"></i></a>
+    </div>
+</section>
+<!--콘텐츠B: 개요 section 시작-->
+<section class="conB">
+    <div class="container">
+        <div class="text">
+          <div class="img">
+           <img src="./img/lineage.png" alt="리니지" width="100" height="100">
+           </div>
+            <h2>리니지</h2>
+            <p>대한민국 게임 산업의 전성시대를 태동시켰던 온라인 게임 시리즈였으며, 스타크래프트와 함께 PC방 문화를 주도하기도 했다.</p>
+            <a href="https://namu.wiki/w/%EB%A6%AC%EB%8B%88%EC%A7%80%20%EC%8B%9C%EB%A6%AC%EC%A6%88" target="_blank">MORE
+                <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+        </div>
+        <div class="text">
+          <div class="img">
+           <img src="./img/dp.jpg" alt="던전앤파이터" width="100" height="100">
+           </div>
+            <h2>던전앤파이터</h2>
+            <p>'빠른 플레이'라는 문구에 딱 들어맞는 게임으로, 별다른 생각없이 가볍게 한판 놀 수 있는 오락실 아케이드 게임의 온라인 버전이다.</p>
+            <a href="https://namu.wiki/w/%EB%8D%98%EC%A0%84%20%EC%95%A4%20%ED%8C%8C%EC%9D%B4%ED%84%B0?from=%EB%8D%98%EC%A0%84%EC%95%A4%ED%8C%8C%EC%9D%B4%ED%84%B0" target="_blank">MORE
+                <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+        </div>
+        <div class="text">
+          <div class="img">
+           <img src="./img/wind.png" alt="바람의나라" width="100" height="100">
+           </div>
+            <h2>바람의나라</h2>
+            <p>올해에 들어 24주년을 맞은 국내 최장수 온라인 게임이자 세계에서 가장 오래 서비스를 하고 있는 MMORPG다. 대한민국 1세대 게임이다. 만화가 김진의 만화 바람의 나라를 원작으로 하는 넥슨의 MMORPG로 1996년에 서비스를 시작해 20년이 넘은 현재까지도 상용화 되고 있다.</p>
+            <a href="https://namu.wiki/w/%EB%B0%94%EB%9E%8C%EC%9D%98%20%EB%82%98%EB%9D%BC(%EA%B2%8C%EC%9E%84)" target="_blank">MORE
+                <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+        </div>
+        <div class="text">
+          <div class="img">
+           <img src="./img/maple.png" alt="메이플스토리" width="100" height="100">
+           </div>
+            <h2>메이플스토리</h2>
+            <p>메이플스토리는 위젯 스튜디오에서 제작한 온라인 MMORPG이자 넥슨의 온라인 게임이다. SD처럼 생긴 캐릭터가 모험을 떠나면서 성장하는 게임으로, 3D 게임에 익숙하지 않은 일반인도 쉽게 마주하는 2D 횡스크롤 게임이다. 다채로운 필드에서의 여행과 모험을 강조하고 있다.</p>
+            <a href="https://namu.wiki/w/%EB%A9%94%EC%9D%B4%ED%94%8C%EC%8A%A4%ED%86%A0%EB%A6%AC" target="_blank">MORE
+                <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+        </div>
+        <div class="text">
+          <div class="img">
+           <img src="./img/darksoul.jpg" alt="다크소울" width="100" height="100">
+           </div>
+            <h2>다크 소울</h2>
+            <p>거대한 보스들과의 전투, 절제되었지만 묵직한 액션, 중요 NPC조차 마음대로 살해할 수 있는 자유도, 불친절한 스토리텔링 뒤에 숨겨진 흥미로운 설정들, 멀티플레이를 게임 스토리 안으로 끌어들인 시스템, 온갖 함정과 복잡하지만, 유기적으로 연결된 맵 구조 등이 단점인 동시에 장점으로 작용하는 게임. 플레이어에게 쉽고 편한 경험만 제공하는 게임들이 대세를 이룬 시점에서 등장한 소울 시리즈의 높은 난이도와 독특한 요소들은 게임계에 큰 충격을 주었다.</p>
+            <a href="https://namu.wiki/w/%EB%8B%A4%ED%81%AC%20%EC%86%8C%EC%9A%B8?from=%EB%8B%A4%ED%81%AC%EC%86%8C%EC%9A%B8" target="_blank">MORE
+                <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+        </div>
+    </div>
+</section>
+</body>
+</html>

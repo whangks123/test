@@ -1,0 +1,116 @@
+<!--profile.html-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>profile</title>
+<!-- reset -->
+   <link rel="stylesheet" href="../css/reset.css">
+    <style>
+/* header */
+        header {
+            width:100%;
+            height:85px;
+            background: rgba(0, 0, 0, 0.1);
+            top:0; left:0;
+            position: fixed;
+            z-index: 5;
+        }
+        header .h_logo {
+            display: inline-block;
+            position: relative;
+            top: 10px;
+            left: 10px;
+        }
+        header nav #top_menu {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+        header nav li{
+            display: inline-block;
+            padding: 0 10px 10px 10px;
+            line-height: 50px;
+            text-transform: uppercase;
+        }
+        header nav ul li a {
+            text-decoration: none;
+            transform: scale(1); transition:all 0.3s;
+        }
+        header nav ul li a:hover {
+            color:rgb(5, 251, 194);
+            font-weight: bold;
+            transform: scale(2.4);
+        }
+        #wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: aquamarine;
+        }
+        #content {
+            text-align: center;
+        }
+        #title {
+            font-family: "맑은 고딕", "돋움"; 
+            text-align: center;
+            padding: 30px;
+            margin-bottom: 30px;
+            color: azure;
+            background-color: darkturquoise;
+            font-size: 60px;
+        }
+        #logo img{
+            border-radius: 50%;     
+        }
+        #profile p {
+            font-size: 25px;
+            margin: 15px;
+        }
+        #profile_introduce {
+            font-size: 19px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            padding-bottom: 150px;
+        }
+        #profile_list li {
+            list-style-type: none;
+            padding: 10px;
+        }
+        #profile {
+            border: 4px solid white;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+<!--헤더: 상단 메뉴-->
+       <header>
+           <h1><a href="../index.html" alt="header"><span><img class="h_logo" src="../img/logo.png" alt="로고" width="60" height="35"></span></a></h1>
+           <nav id="top_menu">
+               <ul>
+                   <li><a href="../homework/homework.html">Homework</a></li>
+                   <li><a href="../portfolio/portfolio.html">portfolis</a></li>
+                   <li><a href="../contact/contact.html">contact</a></li>
+                   <li><a href="../profile/profile.html">profile</a></li>
+               </ul>
+           </nav>
+       </header> <!--헤더 끝-->
+        <div id="content">
+            <h1 id="title">자기 소개</h1>
+            <div id="logo">
+                <img src="./img/photo a.jpg" alt="photo a" width="300" height="300">
+            </div>
+            <div id="profile">
+                <p>컴퓨터소프트웨어공학과 인터넷 기초 실습</p>
+                <p>1-YA 20202280 조무한</p>
+            </div>
+            <div id="profile_introduce">
+               <ul id="profile_list">
+                   <li>작지만 착한 사람</li>
+                   <li>장점: 매사에 최선을 다한다.</li>
+               </ul>
+            </div>
+    </div>
+</div>
+</body>
+</html>

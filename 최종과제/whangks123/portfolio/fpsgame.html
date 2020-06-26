@@ -1,0 +1,229 @@
+<!--fpsgame.html-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>tcggame</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<script src="https://use.fontawesome.com/bfdc0ce719.js"></script>
+<!-- reset -->
+   <link rel="stylesheet" href="../css/reset.css">
+    <style>
+/* layout */
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        #wrapper {
+            width: 12800px;
+            margin: 0 auto;
+        }
+/* header */
+        header {
+            width:100%;
+            height:85px;
+            background: rgba(0, 0, 0, 0.3);
+            top:0; left:0;
+            position: fixed;
+            z-index: 5;
+        }
+        header .h_logo {
+            display: inline-block;
+            position: relative;
+            top: 10px;
+            left: 10px;
+        }
+        header nav #top_menu {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+        header nav li{
+            display: inline-block;
+            padding: 0 10px 10px 10px;
+            line-height: 50px;
+            text-transform: uppercase;
+        }
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            transform: scale(1); transition:all 0.3s;
+        }
+        header nav ul li a:hover {
+            color:rgb(5, 251, 194);
+            font-weight: bold;
+            transform: scale(2.4);
+        }
+/* 콘텐츠A: 메인화면 */
+        .conA {
+            background-image: url('./img/fps.jpg');
+            opacity: 0.75;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            width: 100%;
+            height: 800px;
+            text-align: center;
+        }
+        .conA .container{
+            position: absolute;
+            top:20%;
+            left:0; right:0;
+            font-size: 300%;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.3);
+            color: white;
+        }
+        .conA h1 {
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 2.5em;
+            color: #fff;
+            text-shadow: 0 1px 10px #cccccc;
+            letter-spacing: 50px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .conA .p_introduce {
+            margin-bottom: 30px;
+            letter-spacing: 30px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .conA .p_introduce2 {
+            text-align: center;
+            font-size: 15px;
+            letter-spacing: 5px;
+        }
+/* 콘텐츠B: 개요 */
+        .conB .container {
+            position: absolute;
+            padding-top: 80px;
+            padding-bottom: 20px;
+        }
+        .conB .text {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 60px;
+            text-align: center;
+        }
+        .conB h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        .conB p {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 14px;
+            line-height: 1.8;
+            opacity: 0.8;
+        }
+        .conB a{
+            color: rgba(139, 0, 0, 0.54);
+            text-decoration: none;
+        }
+        .conB a:hover {
+            text-decoration: underline;
+            color: rgba(139, 0, 0, 0.76);
+        }
+        .conB .img {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-size: 40px;
+            width: 2em;
+            line-height: 2em;
+            text-align: center;
+        }
+/* fontawome */
+        .fa {font-size: 50px; color:rgb(255, 0, 196); opacity: 0.5; transform:scale(0.8); transition: all 0.7s;}
+        .fa:hover {opacity:1; transform: scale(1.2);}
+        span .fa {font-size: 20px; color: rgba(255, 0, 216, 0.6);}
+/* 반응형(미디어 쿼리) */
+        @media (min-width: 768px) {
+            .conB .container {
+                display: flex;
+                max-width: 1000px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .conB .text {
+                flex: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<!--헤더: 상단 메뉴-->
+<header>
+    <h1><a href="../index.html" alt="header"><span><img class="h_logo" src="./img/logo.png" alt="로고" width="60" height="35"></span></a></h1>
+    <nav id="top_menu">
+        <ul>
+            <li><a href="../homework/homework.html">Homework</a></li>
+            <li><a href="../portfolio/portfolio.html">portfolis</a></li>
+            <li><a href="../contact/contact.html">contact</a></li>
+            <li><a href="../profile/profile.html">profile</a></li>
+        </ul>
+    </nav>
+</header> <!--헤더 끝-->
+<!--콘텐츠A: 메인화면-->
+<section class="conA">
+    <div class="container">
+        <h1>FPS</h1>
+        <p class="p_introduce">1인칭 슈팅 게임</p>
+        <p class="p_introduce2">FPS(First-person shooter1))는 플레이어의 시점, 내가 사물을 보는 시점과 같은 화면에서 무기나 도구를 이용해 전투를 벌이는 슈팅게임의 일종이다. 즉, ‘1인칭 슈팅’ 게임이다. 게임 속 캐릭터의 시점과 플레이어의 시점이 동일해야 하기 때문에 보통 3D 방식으로 제작되며, 다른 게임에 비해 높은 사실감이 장점이다. 이에 따라 유명한 FPS 게임에는 당대 최고의 그래픽 엔진이 적용되어 게임 산업의 발전에 기여하기도 하고, 사용자들의 PC 업그레이드를 부추기기도 했다.
+</p>
+        <a href="./portfolio.html"><i class="fa fa-hand-o-left" aria-hidden="true"></i></a>
+    </div>
+</section>
+<!--콘텐츠B: 개요 section 시작-->
+<section class="conB">
+    <div class="container">
+        <div class="text">
+          <div class="img">
+           <img src="./img/cs.png" alt="카스" width="100" height="100">
+           </div>
+            <h2>카운터 스트라이크</h2>
+            <p>카운터 스트라이크 시리즈의 첫 번째 작품. FPS의 소장르라고 할 수 있는 택티컬 슈터(Tactical shooter)를 정립한 게임이며, 비교적 사실적인 총기 묘사가 특징이다. 플레이어가 테러리스트, 대테러리스트 두 팀으로 나누어져 한 팀은 사이트에 폭탄을 설치하고 반대 팀에서는 해체하는 폭파 시나리오 방식의 원조격이라고 할 수 있는 게임이다.</p>
+            <a href="https://namu.wiki/w/%EC%B9%B4%EC%9A%B4%ED%84%B0%20%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%9D%B4%ED%81%AC" target="_blank">MORE
+                <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+        </div>
+        <div class="text">
+          <div class="img">
+           <img src="./img/sudden.png" alt="서든어택" width="100" height="100">
+           </div>
+            <h2>서든어택</h2>
+            <p>넥슨GT에서 제작하고 넥슨에서 배급하는 온라인 FPS 게임. 게임 제목 자체는 '기습공격'이라는 뜻이며 이 게임 때문에 국내에서는 '서든'이라는 단어 자체가 이 게임을 명칭하는 용어나 다름없게 되었다.</p>
+            <a href="https://namu.wiki/w/%EC%84%9C%EB%93%A0%EC%96%B4%ED%83%9D" target="_blank">MORE
+                <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+        </div>
+        <div class="text">
+          <div class="img">
+           <img src="./img/overwatch.jpg" alt="오버워치" width="100" height="100">
+           </div>
+            <h2>오버워치</h2>
+            <p>오버워치는 블리자드 엔터테인먼트의 팀 기반 멀티플레이 하이퍼 FPS 게임이다. 개발자들은 성별, 인종, 능력이 다양한 영웅을 제작하는 것을 목표로 하였다. 캐릭터 간 성능 균형을 조정하는 것에 노력을 기울여, 새로운 플레이어가 계속해서 재미를 느낄 수 있도록 하는 한편, 숙련된 플레이어는 비슷한 실력을 가진 플레이어에게 힘겨운 도전을 할 수 있도록 하였다. 오버워치는 기존의 FPS게임에 비해 미래를 배경으로 하였고 그래픽과 게임방식이 기존 FPS와는 다르기에 많은 사람들에게 신선함을 주었다.</p>
+            <a href="https://namu.wiki/w/%EC%98%A4%EB%B2%84%EC%9B%8C%EC%B9%98" target="_blank">MORE
+                <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+        </div>
+        <div class="text">
+          <div class="img">
+           <img src="./img/rainbow.jpg" alt="레인보우 식스" width="100" height="100">
+           </div>
+            <h2>레인보우 식스</h2>
+            <p>톰 클랜시 원작의 동명 소설을 원작으로 한 FPS 게임. 다국적 대테러부대 레인보우의 활약을 그리고 있다. 단순히 격렬하게 적을 쏘고 달리는 타 FPS 게임과 다르게 전술적인 작전 수립과 행동이 게임의 큰 부분을 차지하는 '전술 슈터 게임(Tactical shooter)'을 대표하는 시리즈 중 하나이다.</p>
+            <a href="https://namu.wiki/w/%EB%A0%88%EC%9D%B8%EB%B3%B4%EC%9A%B0%20%EC%8B%9D%EC%8A%A4%20%EC%8B%9C%EB%A6%AC%EC%A6%88" target="_blank">MORE
+                <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+        </div>
+        <div class="text">
+          <div class="img">
+           <img src="./img/halflife.png" alt="하프라이프" width="100" height="100">
+           </div>
+            <h2>하프라이프</h2>
+            <p>1998년 11월 19일 발매된 밸브 코퍼레이션의 골드 소스 엔진 기반의 FPS 게임이다. 혁신적인 게임 디자인으로 발매 당시 극찬을 받았다. 레벨 디자인, 인공지능, 사용자 인터페이스 등 여러 혁신점을 선보였으며 특히 1인칭 시점으로 사건을 몰입감 있게 체험하는 하프라이프의 스토리텔링 방식은 FPS 장르를 넘어 수많은 게임에 영향을 주었다.</p>
+            <a href="https://namu.wiki/w/%ED%95%98%ED%94%84%EB%9D%BC%EC%9D%B4%ED%94%84" target="_blank">MORE
+                <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+        </div>
+    </div>
+</section>
+</body>
+</html>
